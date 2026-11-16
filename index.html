@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warm Mineral Springs Motel | Historic Victor A. Lundy Design — Florida, USA</title>
+  <meta name="description" content="Experience mid-century modern Florida hospitality at Warm Mineral Springs Motel in Warm Mineral Springs, FL. Designed in 1958 by Victor A. Lundy, less than 1 mile from Warm Mineral Springs Resort." />
+
+  <!-- Google Fonts: Playfair Display, Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: {
+              50: '#FDFBF8',
+              100: '#FAF7F2',
+              200: '#F2EBE0',
+              300: '#E5D8C5',
+            },
+            terracotta: {
+              400: '#EB8354',
+              500: '#E06D3B',
+              600: '#D95D39',
+              700: '#B84727',
+            },
+            mineral: {
+              50: '#EFF7F9',
+              100: '#D8ECF0',
+              500: '#2A7B94',
+              600: '#1E5F74',
+              700: '#16495A',
+              800: '#0F3440',
+            },
+            charcoal: '#1F2933',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          boxShadow: {
+            'soft': '0 10px 40px -10px rgba(31, 41, 51, 0.08)',
+            'card': '0 4px 24px -4px rgba(30, 95, 116, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF7F2;
+      color: #1F2933;
+    }
+
+    /* Subtle Mid-Century Geometric Breeze Block Pattern */
+    .breeze-pattern {
+      background-image: radial-gradient(rgba(30, 95, 116, 0.08) 1.5px, transparent 1.5px),
+                        radial-gradient(rgba(224, 109, 59, 0.08) 1.5px, #FAF7F2 1.5px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+
+    /* Retro Diamond Motel Sign Animation */
+    .diamond-tile {
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    }
+    .diamond-tile:hover {
+      transform: translateY(-4px) scale(1.06);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF7F2;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 9999px;
+      border: 2px solid #FAF7F2;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1E5F74;
+    }
+
+    /* Hide scrollbar for horizontal pill strips on mobile */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-terracotta-500 selection:text-white overflow-x-hidden">
+
+  <!-- TOP UTILITY BAR: Location, Direct Phones & Multi-Language Switcher -->
+  <div class="bg-mineral-800 text-sand-100 text-xs sm:text-sm border-b border-mineral-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-col lg:flex-row items-center justify-between gap-2.5">
+      <!-- Address & Contact Quick Links -->
+      <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-1 text-sand-200">
+        <a href="#contact" class="inline-flex items-center gap-1.5 hover:text-white transition">
+          <svg class="w-4 h-4 text-terracotta-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>12597 South Tamiami Trail, Warm Mineral Springs, FL 34287</span>
+        </a>
+        <span class="hidden sm:inline text-mineral-500">•</span>
+        <a href="tel:9414264029" class="inline-flex items-center gap-1.5 hover:text-white transition font-medium">
+          <svg class="w-3.5 h-3.5 text-terracotta-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span>(941) 426-4029</span>
+        </a>
+        <a href="tel:8886947563" class="inline-flex items-center gap-1.5 text-terracotta-400 hover:text-terracotta-300 transition font-semibold">
+          <span>Toll Free: (888) 694-7563</span>
+        </a>
+      </div>
+
+      <!-- International Language Switcher (Preserving the Original Website's 5-Language Welcome) -->
+      <div class="flex items-center gap-1.5 bg-mineral-700/70 px-2.5 py-1 rounded-full border border-mineral-600/60" role="group" aria-label="Language selector">
+        <span class="text-[11px] uppercase tracking-wider text-sand-300 mr-1 hidden sm:inline" data-i18n="lang_label">Language:</span>
+        <button onclick="setLanguage('en')" id="lang-en" class="lang-btn px-2 py-0.5 rounded-full text-xs font-semibold bg-terracotta-500 text-white transition cursor-pointer">English</button>
+        <button onclick="setLanguage('ru')" id="lang-ru" class="lang-btn px-2 py-0.5 rounded-full text-xs font-medium text-sand-200 hover:text-white transition cursor-pointer">Русский</button>
+        <button onclick="setLanguage('de')" id="lang-de" class="lang-btn px-2 py-0.5 rounded-full text-xs font-medium text-sand-200 hover:text-white transition cursor-pointer">Deutsch</button>
+        <button onclick="setLanguage('fr')" id="lang-fr" class="lang-btn px-2 py-0.5 rounded-full text-xs font-medium text-sand-200 hover:text-white transition cursor-pointer">Français</button>
+        <button onclick="setLanguage('es')" id="lang-es" class="lang-btn px-2 py-0.5 rounded-full text-xs font-medium text-sand-200 hover:text-white transition cursor-pointer">Español</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY GLASSMORPHIC HEADER -->
+  <header class="sticky top-0 z-40 bg-sand-100/90 backdrop-blur-md border-b border-sand-300/70 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo with Subtle Mid-Century Canopy & Diamond Sign Emblem -->
+        <a href="#home" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-2xl bg-mineral-600 flex items-center justify-center shadow-sm group-hover:bg-mineral-700 transition relative overflow-hidden">
+            <!-- Custom SVG Tribute to Victor Lundy's Hyperbolic Paraboloid "Champagne Glass" Canopy -->
+            <svg class="w-9 h-9 text-sand-100" viewBox="0 0 48 48" fill="none">
+              <path d="M4 16C12 19 20 19 24 12C28 19 36 19 44 16" stroke="#E06D3B" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8 22C14 24 20 24 24 18C28 24 34 24 40 22" stroke="#FAF7F2" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 12V38" stroke="#FAF7F2" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="19" y="29" width="10" height="10" rx="1.5" transform="rotate(45 24 34)" fill="#E06D3B"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-bold text-lg sm:text-xl tracking-tight text-charcoal leading-none">
+              Warm Mineral Springs <span class="text-terracotta-600">Motel</span>
+            </div>
+            <div class="text-[11px] sm:text-xs font-medium text-mineral-600 tracking-wide mt-1">
+              Historic Victor A. Lundy Design • Est. 1958
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-charcoal/80">
+          <a href="#home" class="hover:text-terracotta-600 transition" data-i18n="nav_home">Home</a>
+          <a href="#rooms" class="hover:text-terracotta-600 transition" data-i18n="nav_about">Rooms &amp; Grounds</a>
+          <a href="#attractions" class="hover:text-terracotta-600 transition" data-i18n="nav_attractions">Area Attractions</a>
+          <a href="#history" class="hover:text-terracotta-600 transition" data-i18n="nav_history">Our History</a>
+          <a href="#contact" class="hover:text-terracotta-600 transition" data-i18n="nav_contact">Contact Us</a>
+        </nav>
+
+        <!-- Primary CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-terracotta-600 hover:bg-terracotta-700 text-white font-display font-semibold text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow transition cursor-pointer">
+            <span data-i18n="cta_inquire">Check Availability</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <button id="mobile-menu-btn" aria-label="Open menu" class="md:hidden p-2.5 rounded-xl bg-sand-200/80 text-charcoal hover:bg-sand-300 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-5 pt-2 border-t border-sand-300/70 space-y-2">
+        <a href="#home" class="mobile-link block px-3 py-2.5 rounded-xl font-semibold text-charcoal hover:bg-sand-200" data-i18n="nav_home">Home</a>
+        <a href="#rooms" class="mobile-link block px-3 py-2.5 rounded-xl font-semibold text-charcoal hover:bg-sand-200" data-i18n="nav_about">Rooms &amp; Grounds</a>
+        <a href="#attractions" class="mobile-link block px-3 py-2.5 rounded-xl font-semibold text-charcoal hover:bg-sand-200" data-i18n="nav_attractions">Area Attractions</a>
+        <a href="#history" class="mobile-link block px-3 py-2.5 rounded-xl font-semibold text-charcoal hover:bg-sand-200" data-i18n="nav_history">Our History</a>
+        <a href="#contact" class="mobile-link block px-3 py-2.5 rounded-xl font-semibold text-charcoal hover:bg-sand-200" data-i18n="nav_contact">Contact Us</a>
+        <div class="pt-2">
+          <a href="#contact" class="mobile-link block text-center bg-terracotta-600 text-white font-semibold py-3 rounded-xl shadow-sm" data-i18n="cta_inquire">Check Availability &amp; Inquire</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative overflow-hidden breeze-pattern pt-8 pb-16 lg:pt-14 lg:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+        <!-- Left Column: Storytelling, Retro Sign Tribute & Quick Booking Bar -->
+        <div class="lg:col-span-6 space-y-6">
+          <!-- Sunshine State & TripAdvisor Excellence Pill -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-mineral-600/10 text-mineral-700 font-semibold text-xs tracking-wide border border-mineral-600/20">
+              <span>☀️</span>
+              <span data-i18n="hero_badge">Florida, USA — The Sunshine State</span>
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-700/10 text-emerald-800 font-semibold text-xs border border-emerald-700/20">
+              <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span>TripAdvisor Certificate of Excellence</span>
+            </span>
+          </div>
+
+          <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.35rem] text-charcoal leading-[1.12] tracking-tight" data-i18n="hero_title">
+            Mid-Century Charm Meets <span class="font-serif italic font-semibold text-terracotta-600">Tropical Florida</span> Relaxation.
+          </h1>
+
+          <p class="text-base sm:text-lg text-charcoal/80 leading-relaxed max-w-xl" data-i18n="hero_subtitle">
+            Welcome to Warm Mineral Springs Motel — an architectural gem designed in 1958 by renowned architect Victor A. Lundy. Enjoy ground-level courtyard rooms, a heated pool &amp; spa, and complimentary daily breakfast less than one mile from the world-famous Warm Mineral Springs Resort.
+          </p>
+
+          <!-- Iconic Retro Diamond "M-O-T-E-L" Sign Tribute -->
+          <div class="pt-1 pb-2">
+            <div class="inline-flex flex-col items-start bg-white/90 backdrop-blur border border-sand-300 rounded-2xl p-4 shadow-card">
+              <div class="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-mineral-600 mb-3">
+                <span>Iconic 1958 Roadside Heritage</span>
+                <span class="h-1 w-1 rounded-full bg-terracotta-500"></span>
+                <span>Victor A. Lundy</span>
+              </div>
+              <div class="flex items-center gap-2.5 sm:gap-3.5 px-1">
+                <div class="diamond-tile w-9 h-9 sm:w-11 sm:h-11 bg-terracotta-500 border-2 border-charcoal rounded-lg rotate-45 flex items-center justify-center shadow-sm">
+                  <span class="-rotate-45 font-display font-extrabold text-white text-base sm:text-lg">M</span>
+                </div>
+                <div class="diamond-tile w-9 h-9 sm:w-11 sm:h-11 bg-terracotta-500 border-2 border-charcoal rounded-lg rotate-45 flex items-center justify-center shadow-sm">
+                  <span class="-rotate-45 font-display font-extrabold text-white text-base sm:text-lg">O</span>
+                </div>
+                <div class="diamond-tile w-9 h-9 sm:w-11 sm:h-11 bg-terracotta-500 border-2 border-charcoal rounded-lg rotate-45 flex items-center justify-center shadow-sm">
+                  <span class="-rotate-45 font-display font-extrabold text-white text-base sm:text-lg">T</span>
+                </div>
+                <div class="diamond-tile w-9 h-9 sm:w-11 sm:h-11 bg-terracotta-500 border-2 border-charcoal rounded-lg rotate-45 flex items-center justify-center shadow-sm">
+                  <span class="-rotate-45 font-display font-extrabold text-white text-base sm:text-lg">E</span>
+                </div>
+                <div class="diamond-tile w-9 h-9 sm:w-11 sm:h-11 bg-terracotta-500 border-2 border-charcoal rounded-lg rotate-45 flex items-center justify-center shadow-sm">
+                  <span class="-rotate-45 font-display font-extrabold text-white text-base sm:text-lg">L</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Availability / Inquiry Launcher -->
+          <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-soft border border-sand-300/80">
+            <form id="hero-quick-form" class="grid sm:grid-cols-3 gap-3 items-end">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-1">Check-In</label>
+                <input type="date" id="hero-checkin" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2.5 text-sm font-medium text-charcoal focus:outline-none focus:border-mineral-600" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-charcoal/60 mb-1">Room Style</label>
+                <select id="hero-room" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2.5 text-sm font-medium text-charcoal focus:outline-none focus:border-mineral-600">
+                  <option value="King Bed Room">King Bed Room</option>
+                  <option value="Queen Bed Room">Queen Bed Room</option>
+                  <option value="Double Bed Room">Double Bed Room</option>
+                  <option value="Efficiency Kitchenette">Efficiency (With Kitchen)</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full bg-mineral-600 hover:bg-mineral-700 text-white font-display font-semibold text-sm py-3 px-4 rounded-xl shadow-sm transition flex items-center justify-center gap-2 cursor-pointer">
+                <span data-i18n="hero_btn">Request Dates</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Showcase Collage -->
+        <div class="lg:col-span-6">
+          <div class="relative">
+            <!-- Decorative Mineral Teal Backdrop Card -->
+            <div class="absolute -inset-3 bg-gradient-to-tr from-mineral-600/20 via-terracotta-500/15 to-transparent rounded-[2rem] -rotate-2"></div>
+
+            <div class="relative bg-white p-3 sm:p-4 rounded-[1.75rem] shadow-soft border border-sand-300/80">
+              <div class="relative rounded-2xl overflow-hidden aspect-[4/3]">
+                <img
+                  src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80"
+                  onerror="this.onerror=null;this.src='https://placehold.co/1200x900/1E5F74/FAF7F2?text=Warm+Mineral+Springs+Motel+Courtyard+%26+Pool';"
+                  alt="Tropical courtyard swimming pool and palm trees at Warm Mineral Springs Motel"
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/65 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex flex-wrap items-end justify-between gap-3 text-white">
+                  <div>
+                    <span class="inline-block px-2.5 py-1 rounded-lg bg-terracotta-600 text-xs font-bold uppercase tracking-wider mb-1">U-Shaped Tropical Courtyard</span>
+                    <p class="font-display font-bold text-lg sm:text-xl leading-snug">Park at Your Door • Step Out to the Pool</p>
+                  </div>
+                  <div class="bg-white/95 text-charcoal px-3.5 py-2 rounded-xl shadow text-xs font-bold">
+                    &lt; 1 Mile to Warm Mineral Springs
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 Key Highlights Strip -->
+              <div class="grid grid-cols-3 gap-2.5 sm:gap-4 pt-3.5">
+                <div class="bg-sand-100 rounded-xl p-3 text-center border border-sand-200">
+                  <div class="font-display font-extrabold text-mineral-600 text-lg sm:text-xl">1958</div>
+                  <div class="text-[11px] sm:text-xs font-medium text-charcoal/75">Victor Lundy Architecture</div>
+                </div>
+                <div class="bg-sand-100 rounded-xl p-3 text-center border border-sand-200">
+                  <div class="font-display font-extrabold text-terracotta-600 text-lg sm:text-xl">Free</div>
+                  <div class="text-[11px] sm:text-xs font-medium text-charcoal/75">Continental Breakfast</div>
+                </div>
+                <div class="bg-sand-100 rounded-xl p-3 text-center border border-sand-200">
+                  <div class="font-display font-extrabold text-mineral-600 text-lg sm:text-xl">8am–9pm</div>
+                  <div class="text-[11px] sm:text-xs font-medium text-charcoal/75">Heated Pool &amp; Spa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS, POOL & GROUNDS ("ABOUT US") -->
+  <section id="rooms" class="py-16 lg:py-24 bg-white border-y border-sand-300/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-terracotta-600 mb-2" data-i18n="rooms_kicker">Hospitality &amp; Comfort</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-charcoal tracking-tight mb-4" data-i18n="rooms_title">
+          Spacious Ground-Level Rooms &amp; Tropical Courtyard
+        </h2>
+        <p class="text-charcoal/75 text-base sm:text-lg leading-relaxed">
+          We are a family-style motel with a friendly staff dedicated to making you feel right at home. Park your vehicle directly outside your door, and open your sliding glass doors straight onto our lush courtyard grounds.
+        </p>
+      </div>
+
+      <!-- Interactive Room Type Filter / Showcase -->
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch mb-16">
+        <!-- Room Cards Grid (7 cols) -->
+        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+          <!-- Standard Guest Rooms Card -->
+          <div class="bg-sand-100 rounded-3xl overflow-hidden border border-sand-300/80 shadow-card flex flex-col">
+            <div class="relative h-52 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80"
+                onerror="this.onerror=null;this.src='https://placehold.co/900x600/E06D3B/FAF7F2?text=King%2C+Queen+%26+Double+Rooms';"
+                alt="Spacious furnished guest room with comfortable bed"
+                class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              />
+              <span class="absolute top-3 left-3 bg-mineral-700/90 backdrop-blur text-white text-xs font-semibold px-3 py-1 rounded-full">
+                King • Queen • Double
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-display font-bold text-xl text-charcoal mb-2">Ground-Level Courtyard Rooms</h3>
+                <p class="text-sm text-charcoal/75 leading-relaxed mb-4">
+                  Available with King, Queen, or Double-size beds. Every room features ground-floor accessibility, front-door parking, and sliding glass doors opening onto the courtyard.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-sand-300 flex items-center justify-between">
+                <span class="text-xs font-semibold text-mineral-600">AC • Wi-Fi • Fridge • Microwave</span>
+                <button onclick="selectRoomAndScroll('King Bed Room')" class="text-sm font-bold text-terracotta-600 hover:text-terracotta-700 cursor-pointer">Inquire →</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Efficiency Rooms Card -->
+          <div class="bg-sand-100 rounded-3xl overflow-hidden border border-sand-300/80 shadow-card flex flex-col">
+            <div class="relative h-52 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80"
+                onerror="this.onerror=null;this.src='https://placehold.co/900x600/1E5F74/FAF7F2?text=Efficiency+Kitchenette+Suites';"
+                alt="Clean efficiency kitchenette equipped for home-cooked meals"
+                class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              />
+              <span class="absolute top-3 left-3 bg-terracotta-600/95 backdrop-blur text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Extended Stay Favorite
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-display font-bold text-xl text-charcoal mb-2">Efficiency Kitchenette Rooms</h3>
+                <p class="text-sm text-charcoal/75 leading-relaxed mb-4">
+                  Ideal for guests who wish to prepare their own meals. Includes all standard room comforts plus cups, saucers, plates, cutlery, pots, and pans.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-sand-300 flex items-center justify-between">
+                <span class="text-xs font-semibold text-mineral-600">Full Cookware &amp; Tableware</span>
+                <button onclick="selectRoomAndScroll('Efficiency Kitchenette')" class="text-sm font-bold text-terracotta-600 hover:text-terracotta-700 cursor-pointer">Inquire →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- In-Room Amenities & Guest Policies Card (5 cols) -->
+        <div class="lg:col-span-5 bg-mineral-800 text-sand-100 rounded-3xl p-7 sm:p-8 shadow-soft flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-mineral-700 text-terracotta-400 text-xs font-bold uppercase tracking-wider mb-4">
+              Included With Every Stay
+            </div>
+            <h3 class="font-display font-bold text-2xl text-white mb-5">Room Comforts &amp; Guest Policies</h3>
+
+            <ul class="space-y-3 text-sm text-sand-200">
+              <li class="flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-terracotta-500/20 text-terracotta-400 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                <span><strong class="text-white">Free Continental Breakfast:</strong> Served daily from <span class="text-terracotta-400 font-semibold">7:30 AM – 10:00 AM</span></span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-terracotta-500/20 text-terracotta-400 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                <span><strong class="text-white">In-Room Essentials:</strong> Air-conditioning, TV, refrigerator, microwave, coffee maker &amp; free Wi-Fi</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-terracotta-500/20 text-terracotta-400 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                <span><strong class="text-white">Daily Maid Service:</strong> Fresh, attentive housekeeping every day</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-terracotta-500/20 text-terracotta-400 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                <span><strong class="text-white">On Request:</strong> Hair dryer, iron, and ironing board available anytime</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-terracotta-500/20 text-terracotta-400 flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                <span><strong class="text-white">100% Non-Smoking Rooms:</strong> Clean, fresh coastal air indoors</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sand-100/10 text-sand-300 flex items-center justify-center shrink-0 mt-0.5">•</span>
+                <span><strong class="text-white">Pet Policy:</strong> No pets allowed on property</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-5 border-t border-mineral-700 flex items-center justify-between text-xs text-sand-300">
+            <span>Awarded TripAdvisor Certificate of Excellence</span>
+            <span class="text-amber-400 font-bold tracking-wider">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- POOL, SPA & COURTYARD RECREATION -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Pool & Heated Spa Card -->
+        <div class="bg-sand-100 rounded-3xl p-6 sm:p-8 border border-sand-300/80 shadow-card">
+          <div class="relative h-60 rounded-2xl overflow-hidden mb-6">
+            <img
+              src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1000&q=80"
+              onerror="this.onerror=null;this.src='https://placehold.co/1000x600/2A7B94/FAF7F2?text=Large+Swimming+Pool+%26+Heated+Jacuzzi';"
+              alt="Large tropical swimming pool and heated spa at Warm Mineral Springs Motel"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur px-3.5 py-1.5 rounded-full text-xs font-bold text-mineral-700 shadow">
+              Pool &amp; Spa Hours: 8:00 AM – 9:00 PM Daily
+            </div>
+          </div>
+          <h3 class="font-display font-bold text-2xl text-charcoal mb-2.5">Pool &amp; Heated Jacuzzi Spa</h3>
+          <p class="text-charcoal/75 text-sm sm:text-base leading-relaxed">
+            Our lush tropical courtyard centers around a large sparkling swimming pool and heated Jacuzzi spa—inviting you to soak up the Florida sunshine by day or unwind under a warm sunset in the evening.
+          </p>
+        </div>
+
+        <!-- Recreation & Leisure Card -->
+        <div class="bg-sand-100 rounded-3xl p-6 sm:p-8 border border-sand-300/80 shadow-card">
+          <div class="relative h-60 rounded-2xl overflow-hidden mb-6">
+            <img
+              src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1000&q=80"
+              onerror="this.onerror=null;this.src='https://placehold.co/1000x600/D95D39/FAF7F2?text=Tiki+Huts%2C+Shuffleboard+%26+BBQ+Courtyard';"
+              alt="Tropical palm shade tiki huts and courtyard lawn"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur px-3.5 py-1.5 rounded-full text-xs font-bold text-terracotta-700 shadow">
+              Halfway Between Venice &amp; Port Charlotte
+            </div>
+          </div>
+          <h3 class="font-display font-bold text-2xl text-charcoal mb-2.5">Recreation, Shuffleboard &amp; BBQ</h3>
+          <p class="text-charcoal/75 text-sm sm:text-base leading-relaxed mb-4">
+            Enjoy friendly matches on our <strong class="text-charcoal">two shuffleboard courts</strong>, relax beneath our thatched tiki huts, or fire up our <strong class="text-charcoal">outdoor Bar-B-Que grills</strong>.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs font-semibold text-mineral-700">
+            <span class="bg-white px-3 py-1.5 rounded-lg border border-sand-300">2 Shuffleboard Courts</span>
+            <span class="bg-white px-3 py-1.5 rounded-lg border border-sand-300">Outdoor BBQ Grills</span>
+            <span class="bg-white px-3 py-1.5 rounded-lg border border-sand-300">Ice &amp; Soda (Rooms 20–21)</span>
+            <span class="bg-white px-3 py-1.5 rounded-lg border border-sand-300">Lobby Snack Machine</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AREA ATTRACTIONS & INTERACTIVE FLORIDA GULF COAST MAP -->
+  <section id="attractions" class="py-16 lg:py-24 bg-sand-100 breeze-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="max-w-2xl">
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-mineral-600 mb-2" data-i18n="attr_kicker">Explore Southwest Florida</span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-charcoal tracking-tight" data-i18n="attr_title">
+            After Checking-In, Your Florida Vacation Begins
+          </h2>
+          <p class="text-charcoal/75 mt-3 text-base">
+            From healing mineral waters less than a mile away to #1 rated Gulf Coast beaches, championship golf, and world-famous theme parks—everything is within effortless reach. Free brochures are always available at our front desk.
+          </p>
+        </div>
+
+        <!-- Interactive Distance Filter Pills -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1" role="tablist">
+          <button onclick="filterAttractions('all')" data-filter="all" class="attr-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-mineral-600 text-white shadow-sm transition cursor-pointer shrink-0">All Destinations</button>
+          <button onclick="filterAttractions('local')" data-filter="local" class="attr-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-charcoal border border-sand-300 hover:border-mineral-600 transition cursor-pointer shrink-0">&lt; 15 Mins</button>
+          <button onclick="filterAttractions('coastal')" data-filter="coastal" class="attr-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-charcoal border border-sand-300 hover:border-mineral-600 transition cursor-pointer shrink-0">Gulf Coast &amp; South</button>
+          <button onclick="filterAttractions('daytrip')" data-filter="daytrip" class="attr-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-charcoal border border-sand-300 hover:border-mineral-600 transition cursor-pointer shrink-0">Tampa &amp; Orlando Day Trips</button>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+        <!-- Attractions Cards List (7 cols) -->
+        <div id="attractions-grid" class="lg:col-span-7 grid sm:grid-cols-2 gap-5">
+
+          <!-- Card 1: Warm Mineral Springs -->
+          <article data-category="local" class="attraction-card bg-white rounded-2xl p-6 border border-sand-300/80 shadow-card hover:border-terracotta-400 transition">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-terracotta-500/10 text-terracotta-700 font-bold text-xs">Less than 1 Mile</span>
+              <span class="text-lg">♨️</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal mb-2">World-Famous Warm Mineral Springs Resort</h3>
+            <p class="text-sm text-charcoal/75 leading-relaxed">
+              Just down the road from our motel—experience Florida's only natural warm mineral spring, renowned worldwide for its mineral-rich 85°F waters.
+            </p>
+          </article>
+
+          <!-- Card 2: Golf & Tennis -->
+          <article data-category="local" class="attraction-card bg-white rounded-2xl p-6 border border-sand-300/80 shadow-card hover:border-terracotta-400 transition">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-mineral-600/10 text-mineral-700 font-bold text-xs">5 Minutes Away</span>
+              <span class="text-lg">⛳</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal mb-2">Championship Golf &amp; Tennis</h3>
+            <p class="text-sm text-charcoal/75 leading-relaxed">
+              Multiple tennis courts, three golf courses, and a driving range are just 5 minutes from your door—plus dozens more courses within 10–25 miles.
+            </p>
+          </article>
+
+          <!-- Card 3: Historic Venice -->
+          <article data-category="local" class="attraction-card bg-white rounded-2xl p-6 border border-sand-300/80 shadow-card hover:border-terracotta-400 transition">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-mineral-600/10 text-mineral-700 font-bold text-xs">15 Minutes Away</span>
+              <span class="text-lg">🦈</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal mb-2">Historic Downtown Venice &amp; Beaches</h3>
+            <p class="text-sm text-charcoal/75 leading-relaxed">
+              Stroll Venice's charming historic downtown filled with boutique shops, sidewalk cafes, live entertainment, and shark-tooth hunting beaches.
+            </p>
+          </article>
+
+          <!-- Card 4: Sarasota Beaches -->
+          <article data-category="coastal" class="attraction-card bg-white rounded-2xl p-6 border border-sand-300/80 shadow-card hover:border-terracotta-400 transition">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-mineral-600/10 text-mineral-700 font-bold text-xs">35 Minutes North</span>
+              <span class="text-lg">🏖️</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal mb-2">Sarasota's #1 Rated Beaches</h3>
+            <p class="text-sm text-charcoal/75 leading-relaxed">
+              Home to quartz-sand beaches voted #1 in the country! Explore Sarasota's Main Street leading to the bayfront park, boat rides, and fine dining.
+            </p>
+          </article>
+
+          <!-- Card 5: Fort Myers & Everglades -->
+          <article data-category="coastal" class="attraction-card bg-white rounded-2xl p-6 border border-sand-300/80 shadow-card hover:border-terracotta-400 transition">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-amber-600/10 text-amber-800 font-bold text-xs">South via I-75</span>
+              <span class="text-lg">🌿</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal mb-2">Fort Myers &amp; The Everglades</h3>
+            <p class="text-sm text-charcoal/75 leading-relaxed">
+              Visit the Thomas A. Edison &amp; Henry Ford Winter Estates and Museum in Fort Myers, or embark on an unforgettable airboat adventure into the Florida Everglades.
+            </p>
+          </article>
+
+          <!-- Card 6: Tampa & Orlando -->
+          <article data-category="daytrip" class="attraction-card bg-white rounded-2xl p-6 border border-sand-300/80 shadow-card hover:border-terracotta-400 transition">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-purple-600/10 text-purple-800 font-bold text-xs">North &amp; Central FL</span>
+              <span class="text-lg">🎢</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-charcoal mb-2">Tampa Bay, Orlando &amp; Space Coast</h3>
+            <p class="text-sm text-charcoal/75 leading-relaxed">
+              Easy highway access to Busch Gardens, Adventure Island, Florida Aquarium, Lowry Park Zoo, Walt Disney World, Epcot, Universal Studios, SeaWorld, Gatorland &amp; Kennedy Space Center.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Stylized Interactive Florida Gulf Coast Map & I-75 Exit Guide (5 cols) -->
+        <div class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-7 border border-sand-300/80 shadow-soft">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="font-display font-bold text-xl text-charcoal">Florida Gulf Coast Location</h3>
+              <p class="text-xs text-charcoal/65">Click any destination pin on the map</p>
+            </div>
+            <span class="px-2.5 py-1 rounded-lg bg-mineral-50 text-mineral-700 font-bold text-xs border border-mineral-200">US-41 &amp; I-75</span>
+          </div>
+
+          <!-- Custom Modern Stylized Florida SVG Map (Re-imagining the Original Site's Yellow Florida Map) -->
+          <div class="relative bg-mineral-50 rounded-2xl p-4 border border-mineral-100 overflow-hidden">
+            <svg viewBox="0 0 360 390" class="w-full h-auto max-h-[340px] mx-auto select-none">
+              <!-- Gulf of Mexico & Atlantic Water Labels -->
+              <text x="35" y="250" fill="#2A7B94" opacity="0.45" font-size="11" font-weight="700" letter-spacing="2">GULF OF</text>
+              <text x="38" y="264" fill="#2A7B94" opacity="0.45" font-size="11" font-weight="700" letter-spacing="2">MEXICO</text>
+
+              <!-- Stylized Florida Peninsula Shape -->
+              <path d="M55,20 L215,20 L255,115 L302,225 L312,320 L292,358 L266,355 L252,325 L212,285 L186,238 L156,205 L146,162 L134,132 L112,115 L72,65 Z"
+                    fill="#F4E3B2" stroke="#1E5F74" stroke-width="2.5" stroke-linejoin="round"/>
+
+              <!-- Lake Okeechobee -->
+              <ellipse cx="262" cy="272" rx="14" ry="18" fill="#7CC4D8" stroke="#1E5F74" stroke-width="1.5"/>
+
+              <!-- Highway I-75 & I-4 Lines -->
+              <path d="M155,25 L162,145 L188,225 L235,310 L298,325" fill="none" stroke="#1F2933" stroke-width="2" stroke-dasharray="4 3"/>
+              <path d="M162,145 L245,112" fill="none" stroke="#1F2933" stroke-width="2" stroke-dasharray="4 3"/>
+
+              <!-- Highway Shields -->
+              <rect x="148" y="75" width="22" height="16" rx="4" fill="#1E5F74"/>
+              <text x="159" y="86" text-anchor="middle" fill="#FFF" font-size="8" font-weight="700">I-75</text>
+
+              <rect x="200" y="118" width="18" height="15" rx="4" fill="#1E5F74"/>
+              <text x="209" y="128" text-anchor="middle" fill="#FFF" font-size="8" font-weight="700">I-4</text>
+
+              <!-- City Pins (Interactive) -->
+              <!-- Orlando -->
+              <g class="cursor-pointer" onclick="highlightPin('Orlando & Space Coast', 'Walt Disney World, Epcot, Universal Studios, SeaWorld, Gatorland & Kennedy Space Center.')">
+                <circle cx="242" cy="112" r="6" fill="#1E5F74" stroke="#FFF" stroke-width="2"/>
+                <text x="252" y="115" fill="#1F2933" font-size="10" font-weight="700">Orlando</text>
+              </g>
+
+              <!-- Tampa -->
+              <g class="cursor-pointer" onclick="highlightPin('Tampa Bay (North)', 'Busch Gardens, Adventure Island, The Florida Aquarium, Lowry Park Zoo & Seminole Casino.')">
+                <circle cx="158" cy="146" r="6" fill="#1E5F74" stroke="#FFF" stroke-width="2"/>
+                <text x="112" y="149" fill="#1F2933" font-size="10" font-weight="700">Tampa</text>
+              </g>
+
+              <!-- Sarasota -->
+              <g class="cursor-pointer" onclick="highlightPin('Sarasota (35 Mins North)', 'Voted #1 beaches in the country, vibrant Main Street, bayfront park, boat rides & dining.')">
+                <circle cx="166" cy="196" r="5.5" fill="#1E5F74" stroke="#FFF" stroke-width="2"/>
+                <text x="108" y="199" fill="#1F2933" font-size="10" font-weight="700">Sarasota</text>
+              </g>
+
+              <!-- Venice -->
+              <g class="cursor-pointer" onclick="highlightPin('Venice (15 Mins Away)', 'Historic downtown district with boutique shops, dining, live entertainment & beaches.')">
+                <circle cx="174" cy="214" r="5" fill="#1E5F74" stroke="#FFF" stroke-width="1.5"/>
+                <text x="128" y="218" fill="#1F2933" font-size="9.5" font-weight="600">Venice</text>
+              </g>
+
+              <!-- WARM MINERAL SPRINGS MOTEL (Hero Pin) -->
+              <g class="cursor-pointer" onclick="highlightPin('Warm Mineral Springs Motel (You Are Here!)', '12597 South Tamiami Trail (US-41). Less than 1 mile from Warm Mineral Springs Resort!')">
+                <circle cx="186" cy="227" r="12" fill="#E06D3B" opacity="0.25"/>
+                <circle cx="186" cy="227" r="7" fill="#E06D3B" stroke="#FFF" stroke-width="2"/>
+                <rect x="34" y="226" width="136" height="32" rx="8" fill="#D95D39"/>
+                <text x="102" y="240" text-anchor="middle" fill="#FFF" font-size="8.5" font-weight="800">WARM MINERAL</text>
+                <text x="102" y="251" text-anchor="middle" fill="#FFF" font-size="8.5" font-weight="800">SPRINGS MOTEL</text>
+                <line x1="170" y1="238" x2="180" y2="230" stroke="#D95D39" stroke-width="2"/>
+              </g>
+
+              <!-- Fort Myers -->
+              <g class="cursor-pointer" onclick="highlightPin('Fort Myers & Everglades (South)', 'Thomas A. Edison & Henry Ford Winter Estates/Museum and Everglades excursions.')">
+                <circle cx="215" cy="276" r="5.5" fill="#1E5F74" stroke="#FFF" stroke-width="2"/>
+                <text x="150" y="280" fill="#1F2933" font-size="10" font-weight="700">Fort Myers</text>
+              </g>
+
+              <!-- Naples / Miami -->
+              <g class="cursor-pointer" onclick="highlightPin('Naples & South Florida', 'Gateway to the Everglades and South Florida Gulf Coast.')">
+                <circle cx="235" cy="316" r="5" fill="#1E5F74" stroke="#FFF" stroke-width="1.5"/>
+                <text x="192" y="320" fill="#1F2933" font-size="9.5" font-weight="600">Naples</text>
+              </g>
+              <circle cx="303" cy="326" r="5" fill="#1E5F74" stroke="#FFF" stroke-width="1.5"/>
+              <text x="268" y="342" fill="#1F2933" font-size="9.5" font-weight="600">Miami</text>
+            </svg>
+          </div>
+
+          <!-- Interactive Pin Readout Box -->
+          <div id="map-pin-info" class="mt-4 p-3.5 rounded-xl bg-sand-100 border border-sand-300 text-xs">
+            <div class="font-bold text-terracotta-700 mb-0.5" id="pin-title">Warm Mineral Springs Motel (You Are Here!)</div>
+            <p class="text-charcoal/80" id="pin-desc">12597 South Tamiami Trail (US-41). Less than 1 mile from Warm Mineral Springs Resort!</p>
+          </div>
+
+          <!-- Exact I-75 Driving Directions from Original Website -->
+          <div class="mt-4 pt-4 border-t border-sand-200 grid grid-cols-2 gap-3 text-xs">
+            <div class="bg-mineral-50 p-3 rounded-xl border border-mineral-100">
+              <span class="block font-extrabold text-mineral-700">From North (I-75 S)</span>
+              <span class="text-charcoal/80">Take <strong>Exit 191</strong> on I-75, then turn <strong>Left on U.S. 41</strong>.</span>
+            </div>
+            <div class="bg-mineral-50 p-3 rounded-xl border border-mineral-100">
+              <span class="block font-extrabold text-mineral-700">From South (I-75 N)</span>
+              <span class="text-charcoal/80">Take <strong>Exit 182</strong> on I-75, then turn <strong>Right on U.S. 41</strong>.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURAL HISTORY: VICTOR A. LUNDY (1958) -->
+  <section id="history" class="py-16 lg:py-24 bg-white border-t border-sand-300/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-terracotta-600 mb-2" data-i18n="hist_kicker">Sarasota School of Architecture</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-charcoal tracking-tight mb-4" data-i18n="hist_title">
+          Our 1958 Architectural Heritage by Victor A. Lundy
+        </h2>
+        <p class="text-charcoal/75 text-base sm:text-lg">
+          Originally opened on March 16, 1958 as the Warm Mineral Springs Inn, our landmark property was designed by celebrated modernist architect <strong class="text-charcoal">Victor A. Lundy</strong>, renowned for his graceful curves and signature <em>"roofs that soar."</em>
+        </p>
+      </div>
+
+      <!-- Architect Quote Feature Banner -->
+      <div class="bg-mineral-800 text-sand-100 rounded-3xl p-8 sm:p-10 lg:p-12 mb-14 relative overflow-hidden shadow-soft">
+        <!-- Decorative SVG Paraboloid Canopy Line Art -->
+        <svg class="absolute right-0 bottom-0 w-72 h-72 text-mineral-700/50 pointer-events-none" viewBox="0 0 200 200" fill="none">
+          <path d="M10 80C50 100 85 100 100 55C115 100 150 100 190 80" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+          <path d="M100 55V195" stroke="currentColor" stroke-width="6"/>
+        </svg>
+
+        <div class="relative z-10 max-w-4xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terracotta-500/20 text-terracotta-300 text-xs font-bold uppercase tracking-wider mb-5">
+            AIA Florida "Official Journal" • August 1958 Issue
+          </div>
+          <blockquote class="font-serif italic text-xl sm:text-2xl lg:text-[1.65rem] text-white leading-relaxed mb-6">
+            “I was searching for a form that would somehow symbolize the thought of the ‘Fountain of Youth’ by a plastic flowing shape, that would also echo the organic growing shape of a tree. The answer came in the adoption of a structural system based on using precast concrete hyperbolic paraboloids, 14'-5" square (from basic motel unit width requirements), plus necessary overlap in two heights arranged in a U-shaped plan... Three of the so called shells were lifted up on higher columns of varying height to form the sign of the motel, as a free-standing piece of sculpture.”
+          </blockquote>
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-mineral-700">
+            <div>
+              <div class="font-display font-bold text-white text-base">— Victor A. Lundy, Architect</div>
+              <div class="text-xs text-sand-300">Selected by the American Institute of Architects for the 1958 Special Award</div>
+            </div>
+            <span class="px-3.5 py-1.5 rounded-xl bg-mineral-700 text-xs font-semibold text-sand-200">
+              "Champagne Glass" Canopy Roofs
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Historical Milestones Timeline -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Milestone 1 -->
+        <div class="bg-sand-100 rounded-3xl p-7 border border-sand-300/80 shadow-card">
+          <div class="w-12 h-12 rounded-2xl bg-terracotta-600 text-white font-display font-extrabold text-sm flex items-center justify-center mb-5 shadow-sm">
+            1958
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">Grand Opening &amp; 10,000 Visitors</h3>
+          <p class="text-sm text-charcoal/75 leading-relaxed">
+            Built originally as an ultra-modern 35-unit "L"-shaped inn for a couple from Venice, FL. Its March 16, 1958 open house drew an estimated 10,000 visitors marveling at the mushroom-like champagne glass roofs and glass walls that let guests gaze at the stars from bed.
+          </p>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="bg-sand-100 rounded-3xl p-7 border border-sand-300/80 shadow-card">
+          <div class="w-12 h-12 rounded-2xl bg-mineral-600 text-white font-display font-extrabold text-sm flex items-center justify-center mb-5 shadow-sm">
+            1985
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">U-Shaped Expansion &amp; Pool Oasis</h3>
+          <p class="text-sm text-charcoal/75 leading-relaxed">
+            The right wing was added to complete the signature U-shaped courtyard layout we enjoy today, alongside the iconic diamond motel sign and the 1985 addition of our tropical courtyard swimming pool and spa area.
+          </p>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="bg-sand-100 rounded-3xl p-7 border border-sand-300/80 shadow-card">
+          <div class="w-12 h-12 rounded-2xl bg-charcoal text-white font-display font-extrabold text-sm flex items-center justify-center mb-5 shadow-sm">
+            Today
+          </div>
+          <h3 class="font-display font-bold text-xl text-charcoal mb-2.5">Original 1958 Reception Desk &amp; Spirit</h3>
+          <p class="text-sm text-charcoal/75 leading-relaxed">
+            While modern updates ensure contemporary comfort for returning guests year after year, we proudly preserve treasures from 1958—including our curved solid wood reception desk in the lobby, truly one of a kind.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT US & RESERVATION INQUIRY -->
+  <section id="contact" class="py-16 lg:py-24 bg-sand-200/70 border-t border-sand-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+
+        <!-- Left Column: Direct Contact Details & Location Card (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="inline-block text-xs font-bold uppercase tracking-widest text-terracotta-600 mb-2" data-i18n="contact_kicker">Plan Your Stay</span>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-charcoal tracking-tight mb-3" data-i18n="contact_title">
+              We Look Forward to Seeing You
+            </h2>
+            <p class="text-charcoal/75 text-base leading-relaxed">
+              If you would like more information about room availability, seasonal rates, or local attractions, our friendly front desk team is delighted to help.
+            </p>
+          </div>
+
+          <!-- Contact Methods Card -->
+          <div class="bg-white rounded-3xl p-6 sm:p-7 border border-sand-300 shadow-card space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-mineral-50 text-mineral-600 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="flex-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-charcoal/50">Motel Address</div>
+                <p class="font-semibold text-charcoal mt-0.5">12597 South Tamiami Trail<br/>Warm Mineral Springs, Florida 34287</p>
+                <button onclick="copyAddress()" class="mt-2 inline-flex items-center gap-1.5 text-xs font-bold text-mineral-600 hover:text-mineral-800 cursor-pointer">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                  <span id="copy-address-label">Copy Street Address</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="border-t border-sand-200 pt-4 grid sm:grid-cols-2 gap-4">
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wider text-charcoal/50">Local Phone</div>
+                <a href="tel:9414264029" class="font-display font-bold text-lg text-charcoal hover:text-terracotta-600 transition">(941) 426-4029</a>
+              </div>
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wider text-charcoal/50">Toll Free</div>
+                <a href="tel:8886947563" class="font-display font-bold text-lg text-terracotta-600 hover:text-terracotta-700 transition">(888) 694-7563</a>
+              </div>
+            </div>
+
+            <div class="border-t border-sand-200 pt-4 grid sm:grid-cols-2 gap-4 text-sm">
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wider text-charcoal/50">Direct Email</div>
+                <a href="mailto:wmsmotel@aol.com" class="font-semibold text-mineral-600 hover:underline">wmsmotel@aol.com</a>
+              </div>
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wider text-charcoal/50">Fax</div>
+                <span class="font-semibold text-charcoal">(941) 426-2039</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Google Maps Directions Card -->
+          <div class="bg-white rounded-3xl overflow-hidden border border-sand-300 shadow-card">
+            <iframe
+              title="Map showing Warm Mineral Springs Motel at 12597 South Tamiami Trail, Warm Mineral Springs, FL 34287"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-82.2750%2C27.0350%2C-82.2450%2C27.0550&amp;layer=mapnik&amp;marker=27.0453%2C-82.2602"
+              class="w-full h-48 border-0"
+              loading="lazy">
+            </iframe>
+            <div class="px-5 py-3 bg-sand-50 flex items-center justify-between text-xs">
+              <span class="font-semibold text-charcoal/75">U.S. Highway 41 (Tamiami Trail)</span>
+              <a href="https://maps.google.com/?q=12597+South+Tamiami+Trail,+Warm+Mineral+Springs,+FL+34287" target="_blank" rel="noopener noreferrer" class="font-bold text-terracotta-600 hover:underline">Open in Google Maps ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Inquiry / Reservation Request Form (7 cols) -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-7 sm:p-10 border border-sand-300 shadow-soft">
+          <div class="flex items-center justify-between border-b border-sand-200 pb-5 mb-6">
+            <div>
+              <h3 class="font-display font-bold text-2xl text-charcoal">Reservation &amp; Information Request</h3>
+              <p class="text-sm text-charcoal/65 mt-0.5">Send a direct inquiry to our front desk — no booking fees.</p>
+            </div>
+            <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Direct Desk Response
+            </span>
+          </div>
+
+          <form id="reservation-form" class="space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="guest-name" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-1.5">Full Name *</label>
+                <input type="text" id="guest-name" required placeholder="e.g., Robert &amp; Claire Miller" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-mineral-600 focus:bg-white transition" />
+              </div>
+              <div>
+                <label for="guest-email" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-1.5">Email Address *</label>
+                <input type="email" id="guest-email" required placeholder="you@example.com" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-mineral-600 focus:bg-white transition" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-5">
+              <div>
+                <label for="form-checkin" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-1.5">Arrival Date</label>
+                <input type="date" id="form-checkin" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-mineral-600 focus:bg-white transition" />
+              </div>
+              <div>
+                <label for="form-checkout" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-1.5">Departure Date</label>
+                <input type="date" id="form-checkout" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-mineral-600 focus:bg-white transition" />
+              </div>
+              <div>
+                <label for="form-guests" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-1.5">Guests</label>
+                <select id="form-guests" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-mineral-600 focus:bg-white transition">
+                  <option value="1 Adult">1 Adult</option>
+                  <option value="2 Adults" selected>2 Adults</option>
+                  <option value="2 Adults, 1 Child">2 Adults, 1 Child</option>
+                  <option value="2 Adults, 2 Children">2 Adults, 2 Children</option>
+                  <option value="Group / Multiple Rooms">Multiple Rooms</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="form-room" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-1.5">Preferred Room Type</label>
+                <select id="form-room" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-mineral-600 focus:bg-white transition">
+                  <option value="King Bed Room">King Bed Ground-Level Room</option>
+                  <option value="Queen Bed Room">Queen Bed Ground-Level Room</option>
+                  <option value="Double Bed Room">Double Bed Ground-Level Room</option>
+                  <option value="Efficiency Kitchenette">Efficiency Room (With Kitchenette)</option>
+                </select>
+              </div>
+              <div>
+                <label for="guest-phone" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-1.5">Phone Number (Optional)</label>
+                <input type="tel" id="guest-phone" placeholder="(941) 555-0199" class="w-full rounded-xl border border-sand-300 bg-sand-50 px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-mineral-600 focus:bg-white transition" />
+              </div>
+            </div>
+
+            <div>
+              <label for="guest-message" class="block text-xs font-bold uppercase tracking-wider text-charcoal/70 mb-1.5">Questions or Special Requests</label>
+              <textarea id="guest-message" rows="3" placeholder="Let us know if you need an iron/hair dryer, poolside courtyard preference, or extended stay rates..." class="w-full rounded-xl border border-sand-300 bg-sand-50 px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-mineral-600 focus:bg-white transition"></textarea>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+              <p class="text-xs text-charcoal/60">
+                Or email directly: <a href="mailto:wmsmotel@aol.com" class="font-bold text-mineral-600 underline">wmsmotel@aol.com</a>
+              </p>
+              <button type="submit" class="w-full sm:w-auto bg-terracotta-600 hover:bg-terracotta-700 text-white font-display font-bold text-sm px-8 py-3.5 rounded-full shadow-sm hover:shadow transition cursor-pointer">
+                Send Inquiry to Front Desk
+              </button>
+            </div>
+          </form>
+
+          <!-- Instant Confirmation Message Box (Replaces alert()) -->
+          <div id="form-confirmation" class="hidden mt-6 p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold shrink-0">✓</div>
+              <div class="flex-1">
+                <h4 class="font-display font-bold text-base">Thank You! Your Inquiry Has Been Prepared</h4>
+                <p id="confirmation-summary" class="text-sm text-emerald-800 mt-1"></p>
+                <div class="mt-3 flex flex-wrap gap-3">
+                  <a id="mailto-fallback-link" href="mailto:wmsmotel@aol.com" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-700 text-white text-xs font-bold hover:bg-emerald-800 transition">
+                    Open in Email App (wmsmotel@aol.com)
+                  </a>
+                  <button type="button" onclick="resetInquiryForm()" class="px-4 py-2 rounded-xl bg-white text-emerald-800 border border-emerald-300 text-xs font-bold hover:bg-emerald-100 transition cursor-pointer">
+                    Send Another Note
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-mineral-800 text-sand-200 pt-14 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-8 pb-10 border-b border-mineral-700">
+        <div class="md:col-span-5 space-y-3">
+          <div class="font-display font-extrabold text-xl text-white">
+            Warm Mineral Springs <span class="text-terracotta-400">Motel</span>
+          </div>
+          <p class="text-sm text-sand-300 leading-relaxed max-w-sm">
+            A historic 1958 Victor A. Lundy mid-century modern motel offering family-style Southwest Florida hospitality just minutes from the Gulf of Mexico.
+          </p>
+          <div class="text-xs text-sand-400 pt-1">
+            12597 South Tamiami Trail, Warm Mineral Springs, FL 34287
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-2 text-sm">
+          <div class="font-display font-bold text-white uppercase tracking-wider text-xs mb-3">Quick Links</div>
+          <div><a href="#home" class="hover:text-white transition">Home</a></div>
+          <div><a href="#rooms" class="hover:text-white transition">Rooms &amp; Grounds</a></div>
+          <div><a href="#attractions" class="hover:text-white transition">Area Attractions</a></div>
+          <div><a href="#history" class="hover:text-white transition">Our 1958 History</a></div>
+          <div><a href="#contact" class="hover:text-white transition">Contact &amp; Directions</a></div>
+        </div>
+
+        <div class="md:col-span-4 space-y-2 text-sm">
+          <div class="font-display font-bold text-white uppercase tracking-wider text-xs mb-3">Reservations &amp; Front Desk</div>
+          <div>Phone: <a href="tel:9414264029" class="text-white font-semibold hover:text-terracotta-400">(941) 426-4029</a></div>
+          <div>Toll Free: <a href="tel:8886947563" class="text-terracotta-400 font-semibold hover:underline">(888) 694-7563</a></div>
+          <div>Fax: (941) 426-2039</div>
+          <div>Email: <a href="mailto:wmsmotel@aol.com" class="text-white underline hover:text-terracotta-400">wmsmotel@aol.com</a></div>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sand-400">
+        <p>© Warm Mineral Springs Motel, Inc. All rights reserved.</p>
+        <p>Historic Victor A. Lundy Architecture • Warm Mineral Springs, Florida</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE JAVASCRIPT -->
+  <script>
+    // 1. Multi-language dictionary preserving the original website's 5-language welcome
+    const translations = {
+      en: {
+        lang_label: "Language:",
+        nav_home: "Home",
+        nav_about: "Rooms & Grounds",
+        nav_attractions: "Area Attractions",
+        nav_history: "Our History",
+        nav_contact: "Contact Us",
+        cta_inquire: "Check Availability",
+        hero_badge: "Florida, USA — The Sunshine State",
+        hero_title: 'Mid-Century Charm Meets <span class="font-serif italic font-semibold text-terracotta-600">Tropical Florida</span> Relaxation.',
+        hero_subtitle: "Welcome to Warm Mineral Springs Motel — an architectural gem designed in 1958 by renowned architect Victor A. Lundy. Enjoy ground-level courtyard rooms, a heated pool & spa, and complimentary daily breakfast less than one mile from the world-famous Warm Mineral Springs Resort.",
+        hero_btn: "Request Dates",
+        rooms_kicker: "Hospitality & Comfort",
+        rooms_title: "Spacious Ground-Level Rooms & Tropical Courtyard",
+        attr_kicker: "Explore Southwest Florida",
+        attr_title: "After Checking-In, Your Florida Vacation Begins",
+        hist_kicker: "Sarasota School of Architecture",
+        hist_title: "Our 1958 Architectural Heritage by Victor A. Lundy",
+        contact_kicker: "Plan Your Stay",
+        contact_title: "We Look Forward to Seeing You"
+      },
+      ru: {
+        lang_label: "Язык:",
+        nav_home: "Главная",
+        nav_about: "Номера и территория",
+        nav_attractions: "Достопримечательности",
+        nav_history: "Наша история",
+        nav_contact: "Контакты",
+        cta_inquire: "Проверить места",
+        hero_badge: "Флорида, США — Солнечный штат",
+        hero_title: 'Очарование середины века и <span class="font-serif italic font-semibold text-terracotta-600">тропический отдых</span> во Флориде.',
+        hero_subtitle: "Добро пожаловать в мотель Warm Mineral Springs — архитектурную жемчужину 1958 года от Виктора А. Ланди. Просторные номера на первом этаже, бассейн с подогревом, джакузи и бесплатный завтрак менее чем в миле от знаменитых минеральных источников.",
+        hero_btn: "Запросить даты",
+        rooms_kicker: "Гостеприимство и комфорт",
+        rooms_title: "Просторные номера и тропический внутренний двор",
+        attr_kicker: "Откройте Юго-Западную Флориду",
+        attr_title: "После заселения начинается ваш идеальный отпуск",
+        hist_kicker: "Архитектурная школа Сарасоты",
+        hist_title: "Наше архитектурное наследие 1958 года",
+        contact_kicker: "Спланируйте поездку",
+        contact_title: "Мы с нетерпением ждем вас"
+      },
+      de: {
+        lang_label: "Sprache:",
+        nav_home: "Startseite",
+        nav_about: "Zimmer & Anlage",
+        nav_attractions: "Attraktionen",
+        nav_history: "Unsere Geschichte",
+        nav_contact: "Kontakt",
+        cta_inquire: "Verfügbarkeit",
+        hero_badge: "Florida, USA — Der Sunshine State",
+        hero_title: 'Mid-Century-Charme trifft auf <span class="font-serif italic font-semibold text-terracotta-600">tropische Florida</span>-Erholung.',
+        hero_subtitle: "Willkommen im Warm Mineral Springs Motel — einem architektonischen Juwel von 1958 des berühmten Architekten Victor A. Lundy. Ebenerdige Zimmer am Innenhof, beheizter Pool & Spa sowie kostenloses Frühstück weniger als eine Meile von den Warm Mineral Springs entfernt.",
+        hero_btn: "Termine anfragen",
+        rooms_kicker: "Gastfreundschaft & Komfort",
+        rooms_title: "Geräumige ebenerdige Zimmer & tropischer Innenhof",
+        attr_kicker: "Südwest-Florida entdecken",
+        attr_title: "Nach dem Check-in beginnt Ihr Florida-Urlaub",
+        hist_kicker: "Sarasota School of Architecture",
+        hist_title: "Unser Architekturerbe von Victor A. Lundy (1958)",
+        contact_kicker: "Aufenthalt planen",
+        contact_title: "Wir freuen uns auf Ihren Besuch"
+      },
+      fr: {
+        lang_label: "Langue :",
+        nav_home: "Accueil",
+        nav_about: "Chambres & Jardin",
+        nav_attractions: "Attractions",
+        nav_history: "Notre Histoire",
+        nav_contact: "Contact",
+        cta_inquire: "Disponibilités",
+        hero_badge: "Floride, États-Unis — L'État du Soleil",
+        hero_title: 'Le charme Mid-Century rencontre la détente <span class="font-serif italic font-semibold text-terracotta-600">tropicale de Floride</span>.',
+        hero_subtitle: "Bienvenue au Warm Mineral Springs Motel — un joyau architectural conçu en 1958 par Victor A. Lundy. Chambres de plain-pied sur cour tropicale, piscine chauffée, spa et petit-déjeuner gratuit à moins d'un mile des célèbres sources minérales.",
+        hero_btn: "Demander les dates",
+        rooms_kicker: "Hospitalité & Confort",
+        rooms_title: "Chambres spacieuses de plain-pied et cour tropicale",
+        attr_kicker: "Explorer le Sud-Ouest de la Floride",
+        attr_title: "Après votre arrivée, vos vacances en Floride commencent",
+        hist_kicker: "École d'architecture de Sarasota",
+        hist_title: "Notre héritage architectural de 1958 par Victor A. Lundy",
+        contact_kicker: "Planifiez votre séjour",
+        contact_title: "Au plaisir de vous accueillir"
+      },
+      es: {
+        lang_label: "Idioma:",
+        nav_home: "Inicio",
+        nav_about: "Habitaciones",
+        nav_attractions: "Atracciones",
+        nav_history: "Nuestra Historia",
+        nav_contact: "Contacto",
+        cta_inquire: "Disponibilidad",
+        hero_badge: "Florida, EE. UU. — El Estado del Sol",
+        hero_title: 'El encanto de mediados de siglo y el descanso <span class="font-serif italic font-semibold text-terracotta-600">tropical de Florida</span>.',
+        hero_subtitle: "Bienvenido a Warm Mineral Springs Motel, una joya arquitectónica diseñada en 1958 por Victor A. Lundy. Habitaciones en planta baja frente al patio tropical, piscina climatizada, spa y desayuno continental gratis a menos de una milla de Warm Mineral Springs.",
+        hero_btn: "Consultar fechas",
+        rooms_kicker: "Hospitalidad y Confort",
+        rooms_title: "Amplias habitaciones en planta baja y patio tropical",
+        attr_kicker: "Explora el Suroeste de Florida",
+        attr_title: "Después del registro, comienzan sus vacaciones en Florida",
+        hist_kicker: "Escuela de Arquitectura de Sarasota",
+        hist_title: "Nuestro legado arquitectónico de 1958 por Victor A. Lundy",
+        contact_kicker: "Planifique su estadía",
+        contact_title: "Esperamos darle la bienvenida pronto"
+      }
+    };
+
+    function setLanguage(lang) {
+      const dict = translations[lang] || translations.en;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.innerHTML = dict[key];
+        }
+      });
+
+      // Update active pill styles
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('bg-terracotta-500', 'text-white', 'font-semibold');
+        btn.classList.add('text-sand-200', 'font-medium');
+      });
+      const activeBtn = document.getElementById('lang-' + lang);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-sand-200', 'font-medium');
+        activeBtn.classList.add('bg-terracotta-500', 'text-white', 'font-semibold');
+      }
+    }
+
+    // 2. Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // 3. Hero quick form -> transfers selected date & room type to main reservation form
+    document.getElementById('hero-quick-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const checkin = document.getElementById('hero-checkin').value;
+      const room = document.getElementById('hero-room').value;
+      if (checkin) document.getElementById('form-checkin').value = checkin;
+      if (room) document.getElementById('form-room').value = room;
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('guest-name').focus();
+    });
+
+    function selectRoomAndScroll(roomName) {
+      document.getElementById('form-room').value = roomName;
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('guest-name').focus();
+    }
+
+    // 4. Area Attractions distance filter
+    function filterAttractions(category) {
+      document.querySelectorAll('.attr-filter-btn').forEach(btn => {
+        const isMatch = btn.getAttribute('data-filter') === category;
+        btn.className = isMatch
+          ? 'attr-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-mineral-600 text-white shadow-sm transition cursor-pointer shrink-0'
+          : 'attr-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-charcoal border border-sand-300 hover:border-mineral-600 transition cursor-pointer shrink-0';
+      });
+
+      document.querySelectorAll('.attraction-card').forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // 5. Interactive Florida Map Pin Details
+    function highlightPin(title, desc) {
+      document.getElementById('pin-title').textContent = title;
+      document.getElementById('pin-desc').textContent = desc;
+    }
+
+    // 6. One-click copy street address (using execCommand fallback for iframe compatibility)
+    function copyAddress() {
+      const addressText = "12597 South Tamiami Trail, Warm Mineral Springs, FL 34287";
+      const tempInput = document.createElement("textarea");
+      tempInput.value = addressText;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand("copy");
+        const label = document.getElementById("copy-address-label");
+        label.textContent = "Copied to Clipboard!";
+        setTimeout(() => { label.textContent = "Copy Street Address"; }, 2500);
+      } catch (err) {
+        console.error("Copy failed", err);
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    // 7. Reservation & Inquiry Form Submission Handler
+    document.getElementById('reservation-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('guest-name').value.trim();
+      const email = document.getElementById('guest-email').value.trim();
+      const checkin = document.getElementById('form-checkin').value || 'Flexible dates';
+      const checkout = document.getElementById('form-checkout').value || 'Flexible dates';
+      const guests = document.getElementById('form-guests').value;
+      const room = document.getElementById('form-room').value;
+      const phone = document.getElementById('guest-phone').value.trim();
+      const notes = document.getElementById('guest-message').value.trim();
+
+      const summary = `We've logged your inquiry for ${name} (${room}, ${guests} • Check-in: ${checkin} to ${checkout}). You can also launch your email client below to send directly to wmsmotel@aol.com or call us at (888) 694-7563.`;
+      document.getElementById('confirmation-summary').textContent = summary;
+
+      const mailSubject = encodeURIComponent(`Room Inquiry: ${room} (${checkin})`);
+      const mailBody = encodeURIComponent(
+        `Hello Warm Mineral Springs Motel,\n\n` +
+        `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n` +
+        `Room Type: ${room}\nGuests: ${guests}\nCheck-in: ${checkin}\nCheck-out: ${checkout}\n\n` +
+        `Notes: ${notes || 'None'}\n`
+      );
+      document.getElementById('mailto-fallback-link').href = `mailto:wmsmotel@aol.com?subject=${mailSubject}&body=${mailBody}`;
+
+      document.getElementById('reservation-form').classList.add('hidden');
+      document.getElementById('form-confirmation').classList.remove('hidden');
+    });
+
+    function resetInquiryForm() {
+      document.getElementById('reservation-form').reset();
+      document.getElementById('form-confirmation').classList.add('hidden');
+      document.getElementById('reservation-form').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
